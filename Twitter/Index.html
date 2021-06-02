@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Twittter Diseño</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class='container'>
+    <div class='row'>
+
+      <!--Left Menu block-->
+      <div class='col-lg-3 col-md-1 col-2'>
+
+        <nav>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><i class="fas fa-house-damage"></i> <span
+                  class="menu-text"></span> <h5>Home</h5></span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> <i class="fab fa-slack-hash"></i> <span class="menu-text">Explore</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-bell"></i> <span class="menu-text">Notifications</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-envelope"></i> <span class="menu-text">Messages</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-bookmark"></i> <span class="menu-text">Bookmarks</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-list-alt"></i> <span class="menu-text">Lists</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-user-circle"></i> <span class="menu-text">Profile</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-ellipsis-h"></i> <span class="menu-text">More</span></a>
+            </li>
+            <li class="nav-item mobile-post">
+              <a class="nav-link2" href="#"><i class="far fa-edit"></i></a>
+            </li>
+          </ul>
+
+
+          <button type="button" class="btn btn-primary btn-sm tweeterBtn">Tweet</button>
+        </nav>
+
+      </div>
+
+      <!--middle block-->
+      <div class='col-lg-6 col-md-11 col-10'>
+        <main>
+
+          <div class="first-part">
+            <h4>Home</h4>
+          </div>
+          <div class="whats-happening">
+            <form>
+              <div class="post-blocks">
+                <div class="post-profile"><img src="assets/images/img_avatar2.png" width="45" height="45" class="avatar" alt="Avatar"></div>
+                <textarea class="post-form" placeholder="What's happening"></textarea>
+              </div>
+              <div class="post-icons">
+                <div class="first-post-icons">
+                  <i class="fas fa-image"></i>
+                  <i class="fas fa-gift"></i>
+                  <i class="fas fa-signal"></i>
+                  <i class="fas fa-smile"></i>
+                </div>
+                <div class="second-post-icons">
+                  <i class="far fa-circle"></i>
+                  <i class="fas fa-plus-circle"></i>
+                  <button type="button" class="btn btn-primary btn-sm tweeterBtn">Tweet</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </main>
+
+        <!--TWEETS-->
+        <section id="tweets">
+          <!--1 tweet-->
+          <div class="tweet-1">
+            <div class="tweet-img">
+              <img src="assets/images/img_avatar6.png" width="45" height="45" alt="Avatar">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong> Flowwer</strong>
+                <span class="twitter-account"> @Flowwer785</span> -
+                <span class="date">Sep 15</span>
+              </div>
+              <div class="message">
+                El día de nacimiento encaja en fecha nacional
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-image"></i>
+                <i class="fas fa-gift"></i>
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-smile"></i>
+              </div>
+            </div>
+          </div>
+          <!--1 tweet-->
+          <div class="tweet-1">
+            <div class="tweet-img">
+              <img src="assets/images/img_avatar5.png" width="45" height="45" class="avatar" alt="Avatar">
+            </div>
+            <div class="tweet-txt">
+              <div class="tweet-name-date">
+                <strong> Toto</strong>
+                <span class="twitter-account"> @Totto223</span> -
+                <span class="date">Dec 21</span>
+              </div>
+              <div class="message">
+                Cerca del 25 pero no tengo suerte XD
+              </div>
+              <div class="tweet-icons">
+                <i class="fas fa-image"></i>
+                <i class="fas fa-gift"></i>
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-smile"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!--Right  block-->
+      <div class='col-lg-3 d-none d-lg-block' id="rightBlock">
+        <!--search-->
+        <div class="search">
+          <form>
+            <input type="search" placeholder="search twitter" results />
+          </form>
+        </div><br />
+        <!--proposed profiles-->
+        <div class="other-profiles">
+          <div class="heading">
+            <h5>Who to follow</h5>
+          </div>
+          <div class="profile-1">
+            <div class="profile-img"><img src="assets/images/img_avatar3.png" width="50" height="50" class="avatar" alt="Avatar"></div>
+            <div class="profile-name">
+              CTM Revista <br />
+              <span class="twitter-account">@CTM_PLUS</span>
+            </div>
+            <div class="follow-btn"><button>Follow</button></div>
+          </div>
+          <div class="profile-1">
+            <div class="profile-img"><img src="assets/images/img_avatar.png" width="50" height="50" class="avatar" alt="Avatar"></div>
+            <div class="profile-name">
+              NPI PAGE <br />
+              <span class="twitter-account">@NPI_PLUS</span>
+            </div>
+            <div class="follow-btn"><button>Follow</button></div>
+          </div>
+          <div class="profile-1">
+            <div class="profile-img"><img src="assets/images/img_avatar4.png" width="55" height="55" class="avatar" alt="Avatar"></div>
+            <div class="profile-name">
+              IDK Blog <br />
+              <span class="twitter-account">@IDK_PLUS</span>
+            </div>
+            <div class="follow-btn"><button>Follow</button></div>
+          </div>
+          <div class="heading">
+            <a href="#">Show more</a>
+          </div>
+        </div><br />
+
+</body>
+</html>

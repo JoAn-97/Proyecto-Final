@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculadora</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="Estilos/claro.css" id="theme" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="Capa">
+    <div class="container">
+      <h1>Calculadora</h1>
+
+      <div class="Fila_Uno">
+        <input type="text" name="resultado" class="resultado" id="resultado" value="" placeholder="Resultado" readonly />
+        <input type="button" value="C" onclick="LimpiarPantalla()" id="Limpiar" />
+      </div>
+      <div class="Fila_Dos">
+        <input type="button" value="1" onclick="Pantalla(1)" id="uno" />
+        <input type="button" value="2" onclick="Pantalla(2)" id="dos" />
+        <input type="button" value="3" id="tres" onclick="Pantalla(3)" />
+        <input type="button" value="+" onclick="Pantalla('+')" />
+      </div>
+      <div class="Fila_Tres">
+        <input type="button" value="4" id="cuatro" onclick="Pantalla(4)" />
+        <input type="button" value="5" id="cinco" onclick="Pantalla(5)" />
+        <input type="button" value="6" id="seis" onclick="Pantalla(6)" />
+        <input type="button" value="-" onclick="Pantalla('-')" />
+      </div>
+      <div class="Fila_Cuatro">
+        <input type="button" value="7" id="siete" onclick="Pantalla(7)" />
+        <input type="button" value="8" id="ocho" onclick="Pantalla(8)" />
+        <input type="button" value="9" id="nueve" onclick="Pantalla(9)" />
+        <input type="button" value="x" onclick="Pantalla('*')" />
+      </div>
+      <div class="Fila_Cinco">
+        <input type="button" value="/" onclick="Pantalla('/')" />
+
+        <input type="button" value="0" id="cero" onclick="Pantalla(0)" />
+        <input type="button" value="." class="dot" onclick="Pantalla('.')" />
+        <input type="button" value="=" onclick="resultado.value = eval(resultado.value)" />
+      </div>
+      <div class="boton-debajo">
+        <button onclick="CambiodeColor()" id="modo_oscuro">
+          Oscuro 
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Fontawesome Script -->
+  <script src="JS/funciones.js"></script>
+</body>
+
+</html>
